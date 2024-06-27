@@ -29,22 +29,22 @@ To use this notebook, open it in Jupyter Notebook or JupyterLab and execute the 
 # Project Structure
 The notebook contains the following main sections:
 
-- 1. Imports and Necessary Installations: Installs and imports required libraries.
-- 2. Custom Diplomacy Gym Class: Defines the custom Gym environment for the Diplomacy game.
-- 3. Testing the Environment: Tests the custom environment to ensure it works correctly.
-- 4. Validation: Runs a validation test to demonstrate the environment's functionality.
-- 5. Training with PPO: Trains an agent using the PPO algorithm in the custom environment.
+-  Imports and Necessary Installations: Installs and imports required libraries.
+-  Custom Diplomacy Gym Class: Defines the custom Gym environment for the Diplomacy game.
+-  Testing the Environment: Tests the custom environment to ensure it works correctly.
+-  Validation: Runs a validation test to demonstrate the environment's functionality.
+-  Training with PPO: Trains an agent using the PPO algorithm in the custom environment.
 
 # Custom Diplomacy Gym Class
 This section defines the `DiplomacyStrategyEnv` class, a custom implementation of a Gym environment for the Diplomacy game. The class includes methods for initializing the environment, resetting it, stepping through actions, rendering, and closing the environment.
 Key Methods
 - 	`__init__()`: Initializes the environment.
-- 	reset(): Resets the environment to the initial state.
-- 	step(action): Executes an action and returns the next state, reward, done flag, and info.
-- 	check_max_action(): Check the maximum possible action for the agent.
-- 	observation_data_to_observation(): creates the observation space for the environment.
-- 	calculate_reward(previous_state, actions_taken, new_state, our_agent): Calculate the reward at a given time step for the agent.
-- 	_init_observation_space(): Create the MultiDiscrete space for the observation space.
+- 	`reset()`: Resets the environment to the initial state.
+- 	`step(action)`: Executes an action and returns the next state, reward, done flag, and info.
+- 	`check_max_action()`: Check the maximum possible action for the agent.
+- 	`observation_data_to_observation()`: creates the observation space for the environment.
+- 	`calculate_reward(previous_state, actions_taken, new_state, our_agent)`: Calculate the reward at a given time step for the agent.
+- 	`_init_observation_space()`: Create the MultiDiscrete space for the observation space.
 
 # Testing the Environment
 This section includes code for testing the custom Gym environment to ensure it functions correctly. It uses random actions to interact with the environment and checks for expected behavior.
